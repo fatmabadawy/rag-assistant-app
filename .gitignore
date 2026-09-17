@@ -1,0 +1,42 @@
+# ---- Python -----------------------------------------------------------------
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ---- Secrets ----------------------------------------------------------------
+# Never commit real environment files. Commit .env.example instead.
+.env
+*.env
+!.env.example
+
+# ---- Logs -------------------------------------------------------------------
+*.log
+logs/
+
+# ---- Vector store -----------------------------------------------------------
+# Regenerated in ~30 seconds by scripts/build_index.py, so it is not committed.
+backend/data/vector_store/
+!backend/data/vector_store/.gitkeep
+
+# ---- Model / HF cache -------------------------------------------------------
+.cache/
+models/
+*.bin
+*.safetensors
+
+# ---- Raw corpus -------------------------------------------------------------
+# The sample Markdown corpus IS committed (it is small and needed to reproduce
+# the evaluation). Uncomment the next line if you swap in a large PDF corpus,
+# and document in the README how to obtain it.
+# data/raw/
+
+# ---- OS / editor ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

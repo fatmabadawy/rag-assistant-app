@@ -1,0 +1,15 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.0
+python-dotenv==1.0.1
+chromadb==0.5.23
+posthog==3.7.0  # chromadb 0.5.x is incompatible with posthog>=4
+sentence-transformers==3.3.1
+transformers==4.46.3
+tokenizers==0.20.3
+huggingface-hub==0.26.5
+ollama==0.4.5
+pypdf==5.1.0
+pytest==8.3.4
+httpx==0.27.2
